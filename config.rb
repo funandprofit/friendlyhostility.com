@@ -20,3 +20,8 @@ set :images_dir, 'images'
 configure :build do
   activate :minify_css
 end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
+end
