@@ -12,6 +12,8 @@ comics.each_with_index do |comic_image, index|
   }
 end
 
+ignore "/comic_template.html"
+
 set :css_dir, 'stylesheets'
 set :images_dir, 'images'
 
