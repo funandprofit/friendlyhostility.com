@@ -4,8 +4,8 @@
     <p>While FH now has ended, the world which Fox and Collin are a part of lives on in my new comic, <strong><a href="http://www.otherpeoplesbusiness.net">Other People's Business</a></strong>! They, and others you may know, will appear at one point or another.</p>
     <p>You can also join <strong><a href="http://forums.snakewife.com">The Snakewife's Forum</a></strong>, where friendly hostiles from all over the world meet!</p>
   </div>
-  <h1 id="date"><%= Date.parse(date).strftime('%A, %B %-d, %Y') %></h1>
-  <a href="#"><img id="comic" src="/images/comics/<%= comic %>" alt="Comic" /></a>
+  <h1 id="date"><%= Date.parse(comic_date).strftime('%A, %B %-d, %Y') %></h1>
+  <a href="#"><img id="comic" src="/images/comics/<%= comic_image %>" alt="Comic" /></a>
   <div id="navigation">
     <% if prev_comic %>
       <a href="/d/20040108.html"><img src="/images/go-first.png" alt="First" title="View first comic" /></a>
