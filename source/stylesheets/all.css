@@ -1,0 +1,464 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+* Filename: friendlyhostility.css
+* Version: 2009-04-16 YYYY-MM-DD
+* Website: http://friendlyhostility.com/
+* Description: Online comic by K. Fuhr
+
+== STRUCTURE: ==============================
+* Page width: 924px
+* Number of columns: 1
+============================================
+
+== INDEX: ===================================
+_main        : Main stuff & reset
+_content     : Main content
+_menu        : Top menu
+_textcontent : Paragraphs, spans, other text
+_links       : <a href>
+_forms       : Various forms
+_footer      : Exactly that
+_calendar    : Calendar
+_overrides   : Sometimes we need these as well
+============================================
+
+*/
+
+/* _main
+==========================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+.block {
+  display: block;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+body {
+  background: #3f3a30 url('/images/fh-tilebg.jpg');
+  color: black;
+  line-height: 145%;
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 13px;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+/*  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  visibility: hidden; */
+}
+
+fieldset {
+  padding: .5em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.justify {
+  text-align: justify;
+}
+
+html {
+  font-size: 100.01%;
+}
+
+a img {
+  border: none;
+}
+
+.left {
+  float: left;
+}
+
+.none {
+  display: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.right {
+  float: right;
+}
+
+select option {
+  padding: 0 5px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.visible {
+  visibility: visible;
+}
+
+/* _main
+==========================================*/
+
+#top {
+  width: 924px;
+  height: 136px;
+  background: url('/images/fh-top.png') no-repeat;
+  margin: 25px auto 0 auto;
+}
+
+#banner {
+  clear: both;
+  width: 924px;
+  height: 143px;
+  padding: 28px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  background: url('/images/fh-bgbanner.jpg') no-repeat;
+}
+
+#banner a img {
+  border: 1px solid #25aef5;
+  border-top: 1px solid #1c5877;
+  border-left: 1px solid #103a4f;
+}
+
+#content {
+  width: 880px;
+  background: #dedac9 url('/images/fh-tilecontent.png') repeat-y;
+  margin: 0 auto;
+  padding: 10px 17px 20px 27px;
+  overflow: hidden;
+}
+
+#content-left {
+  float: left;
+  width: 600px;
+  overflow: hidden;
+}
+
+#content-left img#comic {
+  margin: 15px 0;
+  display: block;
+}
+
+#content-left #navigation {
+  width: 560px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#navigation a {
+  margin: 0 5px;
+}
+
+#content-right {
+  float: right;
+  width: 250px;
+  background: redx;
+  padding: 41px 8px 10px 0;
+  overflow: hidden;
+}
+
+/* _menu
+==========================================*/
+
+#menu-left,
+#menu-right {
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#menu-left {
+  margin: 87px 0 0 8px;
+  float: left;
+  line-height: 22px;
+}
+
+#menu-right {
+  margin: 60px 8px 0 0;
+  float: right;
+  line-height: 20px;
+}
+
+ul.menu li {
+  display: inline;
+  text-align: center;
+}
+
+/* _textcontent
+==========================================*/
+
+p {
+  margin: 0 0 12px 0;
+}
+
+p.ad {
+  margin: 20px 0 0 0;
+}
+
+#footer p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #004080;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1#date {
+  width: 220px;
+  height: 29px;
+  line-height: 30px;
+  text-align: center;
+  text-indent: 10px;
+  font-weight: bold;
+  color: #3f3a30;
+  background: url('/images/h1.png') no-repeat;
+}
+
+p.q {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#opb-msg {
+  border-top: 3px solid #004080;
+  border-bottom: 3px solid #004080;
+  border-left: 1px dashed #004080;
+  border-right: 1px dashed #004080;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+#opb-msg p {
+  margin: 7px 0;
+}
+
+#contest table {
+  border: 1px outset #000;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+#contest table th {
+  font-weight: bold;
+}
+
+#contest table td,
+#contest table th {
+  border: 1px outset #000;
+  padding: 3px;
+}
+
+#links ul li {
+  padding-left: 200px;
+  text-indent: -200px;
+}
+
+/* _links
+==========================================*/
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #004080;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+#menu-left a:link,
+#menu-right a:link,
+#menu-left a:visited,
+#menu-right a:visited {
+  color: #f5e6bb;
+  text-decoration: none;
+  padding: 15px 14px 11px 14px;
+  display: block;
+  float: left;
+}
+
+#menu-right a:link,
+#menu-right a:visited {
+  padding: 15px 14px 12px 14px;
+}
+
+#menu-left a:hover,
+#menu-right a:hover,
+#menu-left a:active,
+#menu-right a:active {
+  background: #7a6a49;
+  color: #ffe000;
+}
+
+#footer a:link,
+#footer a:visited {
+  color: #c7b57b;
+  text-decoration: none;
+}
+
+#footer a:hover,
+#footer a:active {
+  color: #eee;
+  text-decoration: underline;
+}
+
+a.link {
+  float: left;
+  width: 200px;
+}
+
+/* _forms
+==========================================*/
+
+#content-right select {
+  width: 100%;
+}
+
+/* _footer
+==========================================*/
+
+#footer {
+  width: 924px;
+  background: url('/images/fh-bgfooter.png') no-repeat;
+  margin: 0 auto;
+  padding: 28px 0 20px 0;
+  text-align: center;
+  line-height: 170%;
+  color: #b3ab89;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* _calendar
+==========================================*/
+
+.calendar {
+  width: 168px;
+  border: 1px solid #777;
+  outline: 1px solid #f9f5e5;
+  margin: 0 auto 20px auto;
+}
+
+.calendar.archive {
+  margin: 0px 5px 10px 5px;
+  height: 180px;
+  border: 0;
+  outline: 0;
+  float: left;
+}
+
+.calendar.archive table {
+  border: 1px solid #777;
+  outline: 1px solid #f9f5e5;
+}
+
+.calendar th {
+  background: #7eb9e9 url('/images/calendar-th.png') repeat-x;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+  height: 32px;
+  padding-top: 2px;
+  vertical-align: middle;
+  text-align: center;
+  border-bottom: 1px solid #5f9dd4;
+  border-top: 2px solid #5f9dd4;
+  border-right: 1px solid #969179;
+}
+
+.calendar td {
+  background: url('/images/calendar-td.png') no-repeat;
+  width: 23px;
+  height: 23px;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  vertical-align: middle;
+  color: #444;
+  text-align: center;
+  line-height: 22px;
+}
+
+.calendar td.alt {
+  background-position: -23px 0;
+  color: #888;
+  font-size: 11px;
+}
+
+.calendar td a {
+  background: url('/images/calendar-td-a.png') no-repeat;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  color: #234e83;
+  display: block;
+  height: 20px;
+}
+
+.calendar td a:hover,
+.calendar td a:active {
+  background-position: -23px 0;
+  color: #c58600;
+}
+
+.calendar th a {
+  color: white;
+  position: relative;
+  top: 1px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.calendar th a:hover,
+.calendar th a:active {
+  color: #ddd;
+}
